@@ -1,0 +1,44 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul li {
+  padding: 6px 0;
+}
+ul li a {
+  font-family: EuropaNuovaRegular;
+  font-size: 9vh;
+  line-height: 1.2;
+  font-weight: 800;
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  transition: all 250ms linear;
+  text-decoration: none;
+  list-style-type: none;
+}
+ul li a:hover {
+  background-size: 100%;
+   text-decoration: none;
+  color: #60bdde;
+}
+
+ul li a:after{
+  display: block;
+  position: absolute;
+  top: 50%;
+  content: '';
+  height: 2vh;
+  margin-top: -1vh;
+  width: 0;
+  left: 0;
+  background-color: #f8c301;
+  opacity: 0.8;
+  transition: width 250ms linear;
+  list-style-type: none;
+}
+
+ul li a:hover:after{
+  width: 100%;
+}
